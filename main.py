@@ -111,3 +111,6 @@ if now.hour > 18 or now.hour < 3:
         print("success")
     except Exception as e:
         print(e)
+
+    else:
+        print("not opening time")
