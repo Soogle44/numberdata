@@ -6,6 +6,7 @@ from sqlalchemy import create_engine
 import os
 
 now = datetime.datetime.now()
+print(now)
 
 if now.hour > 18 or now.hour < 3:
 
@@ -111,6 +112,3 @@ if now.hour > 18 or now.hour < 3:
         print("success")
     except Exception as e:
         print(e)
-
-    else:
-        print("not opening time")
