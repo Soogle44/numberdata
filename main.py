@@ -109,6 +109,7 @@ if now.hour > 18 or now.hour < 3:
 
         engine = create_engine(os.environ['DATABASE'])
         df.to_sql('data3', con=engine, if_exists='append', index=False)
+        engine.dispose()
         print("success")
     except Exception as e:
         print(e)
